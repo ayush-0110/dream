@@ -91,7 +91,7 @@ try{
   if(pw==password)
   {
 
-    res.redirect('/login/index1.html')
+    res.redirect('/index1.html')
   }
   else{
     // alert("incorrect credentials");
@@ -118,7 +118,7 @@ try{
   if(usermail.name==loginname){
     const update= await dream.updateOne({name:loginname},{$set:{password:pw}});
     // console.log(update.name);
-    res.redirect('/login/index1.html');
+    res.redirect('/index1.html');
 
   }
 else
